@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aides et Subventions ANAH 2026 - ELG Rénovation (95)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'elg-primary': '#1F6B43',
+                        'elg-dark': '#113F27',
+                        'elg-light': '#F3F7F5',
+                        'elg-cta': '#F59E0B',
+                        'elg-accent': '#10B981'
+                    },
+                    boxShadow: {
+                        'premium': '0 20px 50px -12px rgba(17, 63, 39, 0.08)',
+                        'glow': '0 0 25px rgba(245, 158, 11, 0.45)',
+                        'glow-primary': '0 0 25px rgba(31, 107, 67, 0.3)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .profile-card.active { border-color: #1F6B43; background-color: #F3F7F5; transform: scale(1.02); }
+        .profile-card.active .radio-dot { background-color: #1F6B43; box-shadow: 0 0 10px rgba(31, 107, 67, 0.5); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-elg-primary selection:text-white">
+
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-slate-950/20 backdrop-blur-md py-4 shadow-premium">
+        <div class="container mx-auto px-6 max-w-7xl flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tight text-slate-900 flex items-center gap-2">
+                <span class="bg-elg-primary text-white w-8 h-8 rounded-lg flex items-center justify-center font-black shadow-md">E</span>
+                <span class="text-white">ELG <span class="font-light text-emerald-400">Rénovation</span></span>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-8 font-medium text-white/90">
+                <a href="index.html" class="hover:text-elg-cta transition relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-elg-cta after:transition-all">Accueil</a>
+                <a href="qui-sommes-nous.html" class="hover:text-elg-cta transition relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-elg-cta after:transition-all">Qui sommes-nous</a>
+                <a href="services.html" class="hover:text-elg-cta transition relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-elg-cta after:transition-all">Services</a>
+                <a href="aides.html" class="text-elg-cta transition relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-elg-cta">Aides</a>
+                <a href="nos-realisations.html" class="hover:text-elg-cta transition relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-elg-cta after:transition-all">Réalisations</a>
+                <a href="contact.html" class="hover:text-elg-cta transition relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-elg-cta after:transition-all">Contact</a>
+            </nav>
+            <a href="devis.html" class="relative group overflow-hidden bg-elg-cta text-white font-bold px-6 py-3 rounded-xl transition duration-300 shadow-md hover:shadow-glow">
+                <span class="relative z-10 flex items-center gap-2">Devis Gratuit <span>→</span></span>
+            </a>
+        </div>
+    </header>
+
+    <section class="relative bg-gradient-to-br from-slate-900 via-elg-dark to-elg-primary pt-44 pb-24 px-6 overflow-hidden">
+        <div class="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="container mx-auto max-w-5xl text-center relative z-10 space-y-6">
+            <span class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-400/20 px-4 py-1.5 rounded-full text-amber-400 font-semibold text-xs uppercase tracking-wider">
+                Cadre Légal & Subventions d'État 2026
+            </span>
+            <h1 class="text-4xl sm:text-5xl font-black text-white leading-tight tracking-tight">
+                Financez vos travaux jusqu'à <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-emerald-400">90% d'aides cumulées*</span>
+            </h1>
+            <p class="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto font-light leading-relaxed">
+                En tant qu'entreprise certifiée RGE à Argenteuil, nous étudions votre éligibilité aux dispositifs nationaux (MaPrimeRénov', CEE, Éco-PTZ) et déduisons vos primes directement de votre devis.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-white relative z-20" id="simulateur-fiscal">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-elg-primary font-bold tracking-wider uppercase text-xs">Simulateur indicatif ANAH</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">Identifiez votre catégorie de ressources</h2>
+                <p class="text-slate-500 text-xs mt-2">Sélectionnez le profil correspondant aux revenus de votre foyer fiscal pour estimer votre niveau prévisionnel d'accompagnement (Barèmes officiels Île-de-France et Nationaux 2026).</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-7 space-y-4">
+                    <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-md bg-emerald-100 text-elg-primary flex items-center justify-center text-xs font-bold">1</span>
+                        Votre profil de ressources (Classification officielle MaPrimeRénov')
+                    </h3>
+                    
+                    <div onclick="updateSimulator('tres-modeste', 90, 'Bleu', 'Prise en charge maximale (Reste à charge minime)')" class="profile-card active group cursor-pointer p-5 rounded-2xl border-2 border-slate-100 bg-white transition-all duration-300 flex items-center justify-between shadow-sm hover:border-elg-primary">
+                        <div class="flex items-center gap-4">
+                            <div class="w-5 h-5 rounded-full border-2 border-slate-300 flex items-center justify-center group-hover:border-elg-primary">
+                                <div class="radio-dot w-2.5 h-2.5 rounded-full transition-all bg-elg-primary"></div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm sm:text-base">Revenus Très Modestes <span class="text-xs font-semibold px-2 py-0.5 bg-blue-100 text-blue-700 rounded-md ml-2">Profil Bleu</span></h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Foyers aux revenus très modestes selon les plafonds ANAH en vigueur en Île-de-France</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div onclick="updateSimulator('modeste', 75, 'Jaune', 'Accompagnement renforcé')" class="profile-card group cursor-pointer p-5 rounded-2xl border-2 border-slate-100 bg-white transition-all duration-300 flex items-center justify-between shadow-sm hover:border-elg-primary">
+                        <div class="flex items-center gap-4">
+                            <div class="w-5 h-5 rounded-full border-2 border-slate-300 flex items-center justify-center group-hover:border-elg-primary">
+                                <div class="radio-dot w-2.5 h-2.5 rounded-full transition-all"></div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm sm:text-base">Revenus Modestes <span class="text-xs font-semibold px-2 py-0.5 bg-amber-100 text-amber-700 rounded-md ml-2">Profil Jaune</span></h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Foyers aux revenus modestes selon le barème officiel ANAH</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div onclick="updateSimulator('intermediaire', 50, 'Violet', 'Accompagnement standard')" class="profile-card group cursor-pointer p-5 rounded-2xl border-2 border-slate-100 bg-white transition-all duration-300 flex items-center justify-between shadow-sm hover:border-elg-primary">
+                        <div class="flex items-center gap-4">
+                            <div class="w-5 h-5 rounded-full border-2 border-slate-300 flex items-center justify-center group-hover:border-elg-primary">
+                                <div class="radio-dot w-2.5 h-2.5 rounded-full transition-all"></div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm sm:text-base">Revenus Intermédiaires <span class="text-xs font-semibold px-2 py-0.5 bg-purple-100 text-purple-700 rounded-md ml-2">Profil Violet</span></h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Foyers aux revenus intermédiaires (Primes déductibles sur gestes ou parcours global)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div onclick="updateSimulator('superieur', 30, 'Rose', 'Aides CEE et forfaitaires')" class="profile-card group cursor-pointer p-5 rounded-2xl border-2 border-slate-100 bg-white transition-all duration-300 flex items-center justify-between shadow-sm hover:border-elg-primary">
+                        <div class="flex items-center gap-4">
+                            <div class="w-5 h-5 rounded-full border-2 border-slate-300 flex items-center justify-center group-hover:border-elg-primary">
+                                <div class="radio-dot w-2.5 h-2.5 rounded-full transition-all"></div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm sm:text-base">Revenus Supérieurs <span class="text-xs font-semibold px-2 py-0.5 bg-rose-100 text-rose-700 rounded-md ml-2">Profil Rose</span></h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Éligibilité aux Primes CEE et à MaPrimeRénov' en parcours de rénovation d'ampleur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 bg-gradient-to-br from-slate-900 to-elg-dark rounded-3xl p-8 text-white shadow-premium sticky top-28 space-y-6">
+                    <div>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md">Estimation de Financement</span>
+                        <h3 class="text-xl font-bold mt-2">Taux de Prise en Charge Indicatif</h3>
+                    </div>
+                    
+                    <div class="py-6 border-t border-b border-white/10 flex flex-col justify-center items-center text-center">
+                        <div class="text-6xl font-black text-amber-400 tracking-tight transition-all duration-300" id="display-percent">90%</div>
+                        <p class="text-xs text-slate-300 mt-2 font-light">*Jusqu'à ce taux sur le montant HT des travaux éligibles en rénovation globale performante</p>
+                    </div>
+
+                    <div class="space-y-3 text-xs">
+                        <div class="flex justify-between border-b border-white/5 pb-2">
+                            <span class="text-slate-400">Couleur de profil ANAH :</span>
+                            <span class="font-bold text-blue-400 uppercase tracking-wider" id="display-color">Bleu</span>
+                        </div>
+                        <div class="flex justify-between border-b border-white/5 pb-2">
+                            <span class="text-slate-400">Éligibilité MaPrimeRénov' :</span>
+                            <span class="font-bold text-white text-right" id="display-eligibility">Prise en charge maximale (Reste à charge minime)</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Déduction sur devis ELG :</span>
+                            <span class="font-bold text-amber-400">Oui (Selon dossier ANAH validé)</span>
+                        </div>
+                    </div>
+
+                    <a href="devis.html" class="block text-center bg-gradient-to-r from-elg-cta to-amber-500 text-white font-bold text-xs py-4 rounded-xl shadow-glow transition hover:scale-[1.02]">
+                        Étudier mon éligibilité officielle sous 24h
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-slate-50 border-t border-slate-100">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-elg-primary font-bold tracking-wider uppercase text-xs">Décryptage Réglementaire 2026</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">Les 4 leviers financiers légaux et cumulables</h2>
+                <div class="w-12 h-1 bg-elg-cta mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/50 shadow-sm space-y-4">
+                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-elg-primary font-bold text-lg">01</div>
+                    <h3 class="text-lg font-bold text-slate-900">MaPrimeRénov’ (Parcours Accompagné & par geste)</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Le dispositif phare de l'ANAH finance vos travaux de transition énergétique. En parcours de rénovation d'ampleur (gain d'au moins 2 classes sur le DPE), il s'associe au recours à "Mon Accompagnateur Rénov'" (MAR) pour couvrir la majeure partie de votre investissement selon vos ressources.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/50 shadow-sm space-y-4">
+                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-elg-primary font-bold text-lg">02</div>
+                    <h3 class="text-lg font-bold text-slate-900">Les Primes CEE (Certificats d'Économies d'Énergie)</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Financées par les fournisseurs d'énergie et obligataires, les primes CEE (et Coup de Pouce Chauffage/Isolation) s'appliquent directement sur les travaux éligibles réalisés par une entreprise RGE comme ELG Rénovation. Elles sont parfaitement cumulables avec MaPrimeRénov'.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/50 shadow-sm space-y-4">
+                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-elg-primary font-bold text-lg">03</div>
+                    <h3 class="text-lg font-bold text-slate-900">L'Éco-Prêt à Taux Zéro (Éco-PTZ)</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Un crédit bancaire réglementé dont les intérêts sont pris en charge par l'État (taux 0%). Il permet de financer votre reste à charge jusqu'à 50 000 € sur une durée maximale de 20 ans pour les projets de rénovation énergétique globale performante.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/50 shadow-sm space-y-4">
+                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-elg-primary font-bold text-lg">04</div>
+                    <h3 class="text-lg font-bold text-slate-900">La TVA Réduite à 5,5%</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Appliquée directement sur notre facture d'acompte et de solde, la TVA au taux réduit de 5,5% concerne la fourniture et la pose de matériaux d'isolation et d'équipements thermiques performants par notre société certifiée RGE (contre 20% en rénovation standard).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-gradient-to-br from-elg-dark to-slate-950 text-white relative overflow-hidden text-center">
+        <div class="container mx-auto max-w-3xl relative z-10 space-y-6">
+            <h2 class="text-2xl sm:text-3xl font-black tracking-tight">Un accompagnement administratif transparent</h2>
+            <p class="text-slate-300 font-light text-sm max-w-xl mx-auto">Notre secrétariat technique à Argenteuil vérifie l'éligibilité légale de votre dossier avant tout engagement et vous guide dans les démarches de subventions.</p>
+            <div class="pt-4">
+                <a href="devis.html" class="inline-block bg-gradient-to-r from-elg-cta to-amber-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-glow hover:scale-[1.03] transition-all duration-300 text-sm">
+                    Faire valider mon éligibilité gratuitement
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-12 px-6 relative z-10 text-xs border-t border-white/5">
+        <div class="container mx-auto max-w-7xl flex flex-col sm:flex-row justify-between items-center gap-6 text-center sm:text-left">
+            <div>
+                <div class="text-white font-black text-base mb-1">ELG Rénovation</div>
+                <p class="text-slate-500">Société ELG RENOVATION - SIREN : 834 368 458 | Argenteuil (95100)</p>
+            </div>
+            <div class="flex gap-6 text-slate-400 font-medium">
+                <a href="index.html" class="hover:text-white transition">Accueil</a>
+                <a href="qui-sommes-nous.html" class="hover:text-white transition">Mentions Légales</a>
+                <a href="contact.html" class="hover:text-white transition">Contact</a>
+            </div>
+            <div class="text-slate-600">
+                &copy; 2026 ELG Rénovation. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-[#113F27] text-white py-4 px-6 z-50 shadow-2xl transform translate-y-0 transition-transform duration-300">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="text-sm">
+          <p>🍪 Nous utilisons des cookies pour vous offrir la meilleure expérience de simulation et analyser notre trafic. 
+             <a href="contact.html" class="underline text-[#F59E0B] hover:text-white transition">En savoir plus</a>.
+          </p>
+        </div>
+        <div class="flex gap-3 flex-shrink-0">
+          <button onclick="acceptCookies()" class="bg-[#F59E0B] text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-amber-600 transition shadow-lg">Tout Accepter</button>
+          <button onclick="refuseCookies()" class="bg-transparent border border-white text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-white hover:text-[#113F27] transition">Refuser</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function updateSimulator(profileId, percentage, colorName, eligibilityText) {
+            document.querySelectorAll('.profile-card').forEach(card => {
+                card.classList.remove('active');
+                const dot = card.querySelector('.radio-dot');
+                if (dot) dot.classList.remove('bg-elg-primary');
+            });
+
+            const clickedCard = event.currentTarget;
+            clickedCard.classList.add('active');
+            const dot = clickedCard.querySelector('.radio-dot');
+            if (dot) dot.classList.add('bg-elg-primary');
+
+            document.getElementById('display-percent').innerText = percentage + '%';
+            document.getElementById('display-color').innerText = colorName;
+            document.getElementById('display-eligibility').innerText = eligibilityText;
+
+            const colorMap = {
+                'Bleu': 'text-blue-400',
+                'Jaune': 'text-amber-400',
+                'Violet': 'text-purple-400',
+                'Rose': 'text-rose-400'
+            };
+            
+            const colorElem = document.getElementById('display-color');
+            colorElem.className = 'font-bold uppercase tracking-wider ' + (colorMap[colorName] || 'text-emerald-400');
+        }
+
+        function acceptCookies() {
+          document.getElementById('cookie-banner').style.transform = 'translateY(100%)';
+        }
+        function refuseCookies() {
+          document.getElementById('cookie-banner').style.transform = 'translateY(100%)';
+        }
+    </script>
+</body>
+</html>
